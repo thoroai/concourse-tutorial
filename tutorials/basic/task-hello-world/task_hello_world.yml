@@ -5,6 +5,10 @@ image_resource:
   type: docker-image
   source: {repository: busybox}
 
+params:
+  HELLO: world
+  THERE: steph
+
 run:
   path: echo
-  args: [hello world]
+  args: [hello ((WORLD)) ((THERE))]

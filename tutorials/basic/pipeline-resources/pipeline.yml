@@ -13,3 +13,6 @@ jobs:
       - get: resource-tutorial
       - task: hello-world
         file: resource-tutorial/tutorials/basic/task-hello-world/task_hello_world.yml
+        params:
+          HELLO: joe
+          THERE: laura
