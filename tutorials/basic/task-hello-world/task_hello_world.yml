@@ -11,4 +11,4 @@ params:
 
 run:
   path: echo
-  args: [hello ((HELLO)) ((THERE))]
+  args: [hello $HELLO $THERE]
