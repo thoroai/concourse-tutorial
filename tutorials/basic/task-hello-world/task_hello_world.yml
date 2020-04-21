@@ -10,5 +10,8 @@ params:
   THERE: steph
 
 run:
-  path: echo
-  args: [hello $HELLO $THERE]
+  path: /bin/sh
+  args:
+    - -exc
+    - |
+      echo hello $HELLO $THERE
